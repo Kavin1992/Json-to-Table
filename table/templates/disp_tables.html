@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Data</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<h2>JSON Data</h2>
+<div class="">
+  <table class="table table-striped">
+  <tr>
+  {%for j in json_dict1.0.keys%}
+      <th>{{j}}</th>
+      {%endfor%}
+  </tr>
+  {% for i in json_dict1 %}
+      <tr>
+  {% for j in i.values %}
+  <td>{{j}}</td>
+          {%endfor%}
+      </tr>
+      {%endfor%}
+  </table>
+</div>
+
+</body>
+</html>

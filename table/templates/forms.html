@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JSON Data</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Convert Json to Table</h1>
+    </div>
+    <div class="container">
+    <div class="form-group">
+      <form class="" action="." method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" class="btn btn-primary" name="json_to_table" value="Clck Me!!">
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
